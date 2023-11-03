@@ -1,0 +1,207 @@
+/* ProductViewer.css */
+.product-viewer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  .product-viewer2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .image-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 5%;
+  }
+  
+  .image-column img {
+    width: 80px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .image-column img.selected {
+    border-color: #007bff; /* Highlight the selected image */
+  }
+  
+  .product-details {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Adjust alignment to place details on the right */
+  }
+  
+  .big-image-container {
+    flex: 1; /* Make the selected image take up half the page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+  }
+  .big-image-container2 {
+   /* Make the selected image take up half the page */
+   flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+  }
+  .big-image2 {
+    max-width: 320px;
+    max-height: 320px;
+    margin-left: 0px;
+    margin-bottom: 30px;
+  }
+  
+  .detailsVI {
+    text-align: left;
+    margin-right: 200px;
+    font-family: 'Bebas Neue', sans-serif;
+    padding-left: 5%;
+  }
+  
+  .detailsVI h2 {
+    font-family: 'Bebas Neue', sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 5%;
+  }
+  
+  .ratingsVI {
+    display: flex;
+    align-items: center;
+  }
+  
+  .stars {
+    color: gold;
+    font-size: 24px;
+  }
+  
+  .total-reviewsVI {
+    margin-left: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  .price {
+    font-size: 18px;
+    margin-top: 5px;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+ 
+  
+  
+  .discount-tag {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 15px;
+    color: #ffffff; /* Green color for discount */
+ 
+    background-color: #24245a;
+    padding: 3px 10px;
+    display: inline-block;
+  }
+  
+  .product-code {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .sizes {
+    display: flex;
+    margin-top: 10px;
+
+  }
+  
+  .size {
+    margin-right: 20px;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  .size img {
+    max-width: 80px;
+    max-height: 80px;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  
+  .stock-status {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #28a745; /* Green color for in stock, you can change to red for out of stock */
+    font-family: 'Bebas Neue', sans-serif;
+}
+  
+ #addtocart {
+    background-color: #24245a;
+    color: #fff;
+    border: none;
+    padding: 8px 50px;
+    margin-top: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  #addtocart:hover {
+    background-color: #0056b3;
+  }
+  .sale-price {
+    color: red;
+    margin-right: 5px;
+    font-size: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    margin: 5px;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-top: -5px;
+  }
+  .price {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    
+  }
+  .image-row {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+    align-items: center; /* Align images vertically in the middle */
+    padding-right: 2%; /* Optional padding between images */
+  }
+  
+  .image-row img {
+    width: 50px;
+    cursor: pointer;
+    margin-right: 2px; /* Optional margin between images */
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .image-row img.selected {
+    border-color: #007bff; /* Highlight the selected image */
+  }
+
+  @media screen and (max-width: 768px) {
+    .detailsVI h2{
+      font-size: 34px;
+    }
+
+    .detailsVI{
+      margin-top: 5%;
+    }
+
+}
