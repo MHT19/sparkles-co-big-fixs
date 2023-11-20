@@ -5,12 +5,18 @@ import img1 from "./Pic1.jpg";
 import location from "./location.png";
 import { FaShoppingCart } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faTimes, faChevronRight, faMapMarker } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faTimes,
+  faChevronRight,
+  faMapMarker,
+} from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
 import { Modal, Button } from "react-bootstrap";
 import SubCat from "./SubCat";
 
+//git yo guitt
 
 const Navbar = () => {
   const isSmallScreen = () => window.innerWidth < 950;
@@ -64,35 +70,160 @@ const Navbar = () => {
   ];
 
   const dropdownContents = {
-
-    "Accessories" : <SubCat
-    images={[img1]}
-    categories={['Category 1', 'Category 2', 'Category 3', 'Category 4', 'Category 5', 'Category 1', 'Category 2', 'Category 3', 'Category 4', 'Category 5', 'Category 1', 'Category 2', 'Category 3', 'Category 4', 'Category 5' ]}
-  />,
-    "Kit" : <SubCat
-    images={[img1]}
-    categories={['Category 1', 'Category 2', 'Category 3', 'Category 4', 'Category 5', 'Category 1', 'Category 2', 'Category 3', 'Category 4', 'Category 5', 'Category 1', 'Category 2', 'Category 3', 'Category 4', 'Category 5' ]}
-  />,
-    "Wash & Dry" : <SubCat
-    images={[img1]}
-    categories={['Category 1', 'Category 2', 'Category 3', 'Category 4', 'Category 5', 'Category 1', 'Category 2', 'Category 3', 'Category 4', 'Category 5', 'Category 1', 'Category 2', 'Category 3', 'Category 4', 'Category 5' ]}
-  />,
-    "Soaps & Cleaners" : <SubCat
-    images={[img1]}
-    categories={['Category 1', 'Category 2', 'Category 3', 'Category 4', 'Category 5', 'Category 1', 'Category 2', 'Category 3', 'Category 4', 'Category 5', 'Category 1', 'Category 2', 'Category 3', 'Category 4', 'Category 5' ]}
-  />,
-    "Exterior Care": <SubCat
-    images={[img1]}
-    categories={['Category 1', 'Category 2', 'Category 3', 'Category 4', 'Category 5', 'Category 1', 'Category 2', 'Category 3', 'Category 4', 'Category 5', 'Category 1', 'Category 2', 'Category 3', 'Category 4', 'Category 5' ]}
-  />,
-    "Interior Care": <SubCat
-    images={[img1]}
-    categories={['Category 1', 'Category 2', 'Category 3', 'Category 4', 'Category 5', 'Category 1', 'Category 2', 'Category 3', 'Category 4', 'Category 5', 'Category 1', 'Category 2', 'Category 3', 'Category 4', 'Category 5' ]}
-  />,
-    "Lubricants & Filters": <SubCat
-    images={[img1]}
-    categories={['Category 1', 'Category 2', 'Category 3', 'Category 4', 'Category 5', 'Category 1', 'Category 2', 'Category 3', 'Category 4', 'Category 5', 'Category 1', 'Category 2', 'Category 3', 'Category 4', 'Category 5' ]}
-  />
+    Accessories: (
+      <SubCat
+        images={[img1]}
+        categories={[
+          "Category 1",
+          "Category 2",
+          "Category 3",
+          "Category 4",
+          "Category 5",
+          "Category 1",
+          "Category 2",
+          "Category 3",
+          "Category 4",
+          "Category 5",
+          "Category 1",
+          "Category 2",
+          "Category 3",
+          "Category 4",
+          "Category 5",
+        ]}
+      />
+    ),
+    Kit: (
+      <SubCat
+        images={[img1]}
+        categories={[
+          "Category 1",
+          "Category 2",
+          "Category 3",
+          "Category 4",
+          "Category 5",
+          "Category 1",
+          "Category 2",
+          "Category 3",
+          "Category 4",
+          "Category 5",
+          "Category 1",
+          "Category 2",
+          "Category 3",
+          "Category 4",
+          "Category 5",
+        ]}
+      />
+    ),
+    "Wash & Dry": (
+      <SubCat
+        images={[img1]}
+        categories={[
+          "Category 1",
+          "Category 2",
+          "Category 3",
+          "Category 4",
+          "Category 5",
+          "Category 1",
+          "Category 2",
+          "Category 3",
+          "Category 4",
+          "Category 5",
+          "Category 1",
+          "Category 2",
+          "Category 3",
+          "Category 4",
+          "Category 5",
+        ]}
+      />
+    ),
+    "Soaps & Cleaners": (
+      <SubCat
+        images={[img1]}
+        categories={[
+          "Category 1",
+          "Category 2",
+          "Category 3",
+          "Category 4",
+          "Category 5",
+          "Category 1",
+          "Category 2",
+          "Category 3",
+          "Category 4",
+          "Category 5",
+          "Category 1",
+          "Category 2",
+          "Category 3",
+          "Category 4",
+          "Category 5",
+        ]}
+      />
+    ),
+    "Exterior Care": (
+      <SubCat
+        images={[img1]}
+        categories={[
+          "Category 1",
+          "Category 2",
+          "Category 3",
+          "Category 4",
+          "Category 5",
+          "Category 1",
+          "Category 2",
+          "Category 3",
+          "Category 4",
+          "Category 5",
+          "Category 1",
+          "Category 2",
+          "Category 3",
+          "Category 4",
+          "Category 5",
+        ]}
+      />
+    ),
+    "Interior Care": (
+      <SubCat
+        images={[img1]}
+        categories={[
+          "Category 1",
+          "Category 2",
+          "Category 3",
+          "Category 4",
+          "Category 5",
+          "Category 1",
+          "Category 2",
+          "Category 3",
+          "Category 4",
+          "Category 5",
+          "Category 1",
+          "Category 2",
+          "Category 3",
+          "Category 4",
+          "Category 5",
+        ]}
+      />
+    ),
+    "Lubricants & Filters": (
+      <SubCat
+        images={[img1]}
+        categories={[
+          "Category 1",
+          "Category 2",
+          "Category 3",
+          "Category 4",
+          "Category 5",
+          "Category 1",
+          "Category 2",
+          "Category 3",
+          "Category 4",
+          "Category 5",
+          "Category 1",
+          "Category 2",
+          "Category 3",
+          "Category 4",
+          "Category 5",
+        ]}
+      />
+    ),
   };
 
   const handleMenuItemClick = (item) => {
@@ -143,52 +274,70 @@ const Navbar = () => {
             </div>
           </nav>
           {isMenuOpen ? (
-      <Modal size="sm" animation={false} show={isMenuOpen} onHide={toggleMenu} dialogClassName={`custom-modal ${isMenuOpen ? '' : 'hidden'}`}>    <Modal.Header>
-      <div className="modal-header-content">
-        <div className="modal-title">
-          <span>Main Menu</span>
-        </div>
-        <div className="close-button" onClick={toggleMenu}>
-          <FontAwesomeIcon icon={faTimes} style={{ fontSize: "24px", color: "#24245a" }} />
-        </div>
-      </div>
-    </Modal.Header>
-    <Modal.Body>
-      <ul className="menu-list">
-        {menuItems.map((item, index) => (
-          <li key={index}>
-            {item}
-            <FontAwesomeIcon
-              icon={faChevronRight}
-              style={{ fontSize: "12px", color: "#24245a", cursor: "pointer" }}
-              onClick={() => handleMenuItemClick(item)}
+            <Modal
+              size="sm"
+              animation={false}
+              show={isMenuOpen}
+              onHide={toggleMenu}
+              dialogClassName={`custom-modal ${isMenuOpen ? "" : "hidden"}`}
+            >
+              {" "}
+              <Modal.Header>
+                <div className="modal-header-content">
+                  <div className="modal-title">
+                    <span>Main Menu</span>
+                  </div>
+                  <div className="close-button" onClick={toggleMenu}>
+                    <FontAwesomeIcon
+                      icon={faTimes}
+                      style={{ fontSize: "24px", color: "#24245a" }}
+                    />
+                  </div>
+                </div>
+              </Modal.Header>
+              <Modal.Body>
+                <ul className="menu-list">
+                  {menuItems.map((item, index) => (
+                    <li key={index}>
+                      {item}
+                      <FontAwesomeIcon
+                        icon={faChevronRight}
+                        style={{
+                          fontSize: "12px",
+                          color: "#24245a",
+                          cursor: "pointer",
+                        }}
+                        onClick={() => handleMenuItemClick(item)}
+                      />
+                    </li>
+                  ))}
+                </ul>
+              </Modal.Body>
+              <Modal.Footer>
+                <Button className="login-button">
+                  <FontAwesomeIcon
+                    icon={faUser}
+                    style={{ fontSize: "24px", color: "#24245a" }}
+                  />
+                  <span className="button-text">Log in</span>
+                </Button>
+                <Button className="store-button">
+                  <FontAwesomeIcon
+                    icon={faMapMarker}
+                    style={{ fontSize: "24px", color: "#24245a" }}
+                  />
+                  <span className="button-text">FIND A STORE</span>
+                </Button>
+              </Modal.Footer>
+            </Modal>
+          ) : null}
 
-              
-            />
-          </li>
-        ))}
-      </ul>
-    </Modal.Body>
-    <Modal.Footer>
-      <Button className="login-button">
-        <FontAwesomeIcon icon={faUser} style={{ fontSize: "24px", color: "#24245a" }} />
-        <span className="button-text">Log in</span>
-      </Button>
-      <Button className="store-button">
-        <FontAwesomeIcon icon={faMapMarker} style={{ fontSize: "24px", color: "#24245a" }} />
-        <span className="button-text">FIND A STORE</span>
-      </Button>
-    </Modal.Footer>
-  </Modal>
-          ) :
-          null}
-
-    {!isSticky && (
-      <div className="search-bar_rs">
-        <input type="text" placeholder="Search..." />
-      </div>
-    )}
-    <div id ="dummy"></div>
+          {!isSticky && (
+            <div className="search-bar_rs">
+              <input type="text" placeholder="Search..." />
+            </div>
+          )}
+          <div id="dummy"></div>
         </div>
       ) : (
         <div id="FullNavbar" className={isSticky ? "sticky" : ""}>
@@ -240,13 +389,11 @@ const Navbar = () => {
                 onClick={() => handleMenuItemClick(item)}
               >
                 {item}
-                <div className="dropdown-menu">
-                {getDropdownContent(item)}
-                </div>
+                <div className="dropdown-menu">{getDropdownContent(item)}</div>
               </div>
             ))}
           </div>
-          <div id ="dummy"></div>
+          <div id="dummy"></div>
         </div>
       )}
     </>
